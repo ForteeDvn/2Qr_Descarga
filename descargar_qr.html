@@ -6,7 +6,7 @@
 </head>
 <body style="text-align: center; font-family: sans-serif; padding: 50px;">
   <h2>📲 Descargar código QR</h2>
-  <p>Espera 15 segundos antes de poder descargar tu código QR personalizado.</p>
+  <p>Espera 2 segundos antes de poder descargar tu código QR personalizado.</p>
 
   <!-- Imagen de vista previa -->
   <div id="previewContainer" style="margin: 20px;">
@@ -35,8 +35,8 @@
     qrImage.src = qrUrl;
     qrImage.style.display = "inline-block";
 
-    // Temporizador
-    let contador = 15;
+    // Temporizador con 2 segundos
+    let contador = 2;
     const intervalo = setInterval(() => {
       button.innerText = `⏳ Espera ${contador--}s...`;
       if (contador < 0) {
